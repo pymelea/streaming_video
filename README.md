@@ -96,88 +96,88 @@ This section explains the tools we use to build the platform. Don't worry if you
 
 - **Fast building (Vite)**: It's like a super-fast builder that assembles all the pieces of the application to make it work quickly.
 
-## 🏗️ Estructura del Proyecto
+## 🏗️ Project Structure
 
 ```plaintext
 stream_apifast_v1/
 ├── back/                 # Backend (FastAPI)
-│   ├── api/              # Definición de endpoints API
-│   ├── core/             # Configuraciones centrales
-│   ├── db/               # Configuración de base de datos
-│   ├── models/           # Modelos de datos
-│   ├── schemas/          # Esquemas de validación
-│   ├── services/         # Lógica de negocio
-│   ├── tests/            # Tests unitarios y de integración
-│   └── main.py           # Punto de entrada de la aplicación
+│   ├── api/              # API endpoints definition
+│   ├── core/             # Core configurations
+│   ├── db/               # Database configuration
+│   ├── models/           # Data models
+│   ├── schemas/          # Validation schemas
+│   ├── services/         # Business logic
+│   ├── tests/            # Unit and integration tests
+│   └── main.py           # Application entry point
 ├── front/                # Frontend (React + Vite)
-│   ├── public/           # Archivos estáticos
-│   ├── src/              # Código fuente React
-│   └── package.json      # Dependencias y scripts
-└── infra/                # Configuración de infraestructura
+│   ├── public/           # Static files
+│   ├── src/              # React source code
+│   └── package.json      # Dependencies and scripts
+└── infra/                # Infrastructure configuration
 ```
 
-## 🚦 Cómo instalar y ejecutar el proyecto
+## 🚦 How to install and run the project
 
-### Lo que necesitas antes de empezar
+### What you need before starting
 
-Para poder instalar y ejecutar esta plataforma en tu computadora, necesitarás tener instalado lo siguiente:
+To install and run this platform on your computer, you will need to have the following installed:
 
-- **Python 3.10 o superior**: Es el lenguaje de programación que usa la parte del servidor. [Cómo instalar Python](https://www.python.org/downloads/)
+- **Python 3.10 or higher**: This is the programming language used by the server side. [How to install Python](https://www.python.org/downloads/)
 
-- **Node.js 18 o superior**: Es necesario para ejecutar la parte visual de la aplicación. [Cómo instalar Node.js](https://nodejs.org/)
+- **Node.js 18 or higher**: This is necessary to run the visual part of the application. [How to install Node.js](https://nodejs.org/)
 
-- **Base de datos**: Por defecto, la aplicación puede usar SQLite (que no requiere instalación adicional), pero para un uso más avanzado puedes usar PostgreSQL. [Cómo instalar PostgreSQL](https://www.postgresql.org/download/)
+- **Database**: By default, the application can use SQLite (which requires no additional installation), but for more advanced use, you can use PostgreSQL. [How to install PostgreSQL](https://www.postgresql.org/download/)
 
-### Paso 1: Configurar la parte del servidor (Backend)
+### Step 1: Configure the server side (Backend)
 
-Sigue estos pasos en orden. Si encuentras algún error, generalmente el mensaje te dará pistas sobre cómo solucionarlo.
+Follow these steps in order. If you encounter any errors, the message will generally give you clues on how to fix them.
 
 ```bash
-# Navegar al directorio del backend
+# Navigate to the backend directory
 cd back
 
-# Crear y activar entorno virtual
+# Create and activate virtual environment
 python -m venv venv
-source venv/bin/activate  # En Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Instalar dependencias
+# Install dependencies
 pip install -r requirements.txt
 
-# 6. Prepara la base de datos
+# Prepare the database
 python run_migrations.py
 
-# 7. (Opcional) Carga datos de ejemplo para probar
+# (Optional) Load example data for testing
 python -m seeds.seed_all
 
-# 8. Inicia el servidor
+# Start the server
 python main.py
 ```
 
-El servidor API estará disponible en [http://localhost:8000](http://localhost:8000)
+The API server will be available at [http://localhost:8000](http://localhost:8000)
 
-Ahora necesitas abrir **otra terminal** (deja la anterior abierta) y seguir estos pasos:
+Now you need to open **another terminal** (leave the previous one open) and follow these steps:
 
 ```bash
-# Navegar al directorio del frontend
+# Navigate to the frontend directory
 cd front
 
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Iniciar el servidor de desarrollo
+# Start the development server
 npm run dev
 ```
 
-La aplicación estará disponible en [http://localhost:3000](http://localhost:3000)
+The application will be available at [http://localhost:3000](http://localhost:3000)
 
-## 📚 Documentación API
+## 📚 API Documentation
 
-La documentación interactiva de la API está disponible en:
+The interactive API documentation is available at:
 
 
 - Doc: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-## 🧪 Pruebas
+## 🧪 Tests
 
 ### Backend
 
@@ -193,24 +193,24 @@ cd front
 npm test
 ```
 
-## 🤝 ¿Quieres ayudar a mejorar esta plataforma?
+## 🤝 Want to help improve this platform?
 
-Tus contribuciones son muy bienvenidas. Si tienes conocimientos de programación y quieres ayudar, estos son los pasos básicos:
+Your contributions are very welcome. If you have programming knowledge and want to help, these are the basic steps:
 
-1. Fork el repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/amazing-feature`)
-3. Haz commit de tus cambios (`git commit -m 'Add some amazing feature'`)
-4. Push a la rama (`git push origin feature/amazing-feature`)
-5. Abre un Pull Request
+1. Fork the repository
+2. Create a branch for your feature (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contacto
+## 📞 Contact
 
-Si tienes preguntas o sugerencias, no dudes en contactarme.
+If you have questions or suggestions, don't hesitate to contact me.
 
 ---
 
-Desarrollado con ❤️ por el Lily Perera de Streaming Video Platform
+Developed with ❤️ by Lily Perera from Streaming Video Platform
