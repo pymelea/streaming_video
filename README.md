@@ -1,183 +1,183 @@
-# 🎬 Plataforma de Streaming de Video
+# 🎬 Video Streaming Platform
 
-¡Bienvenido/a a nuestra Plataforma de Streaming de Video! Este proyecto te permite crear tu propio servicio de streaming similar a Netflix o YouTube, donde podrás subir, organizar y reproducir videos con una interfaz moderna y atractiva.
+Welcome to our Video Streaming Platform! This project allows you to create your own streaming service similar to Netflix or YouTube, where you can upload, organize, and play videos with a modern and attractive interface.
 
-## 📸 Capturas de Pantalla
+## 📸 Screenshots
 
-### Interfaz Principal
+### Main Interface
 
-![Interfaz Principal](/screenshots/main_interface.png)
-*Vista principal de la aplicación mostrando la lista de videos disponibles*
+![Main Interface](/screenshots/main_interface.png)
+*Main view of the application showing the list of available videos*
 
-### Reproductor de Video
+### Video Player
 
-![Reproductor de Video](/screenshots/video_player.png)
-*Reproductor de video con controles y subtítulos*
+![Video Player](/screenshots/video_player.png)
+*Video player with controls and subtitles*
 
 
-### Documentación API (Stream API)
+### API Documentation (Stream API)
 
 ![OpenAPI](/screenshots/swagger_ui.png)
-*Documentación interactiva de la API*
+*Interactive API documentation*
 
-## 📋 ¿Qué es esta plataforma?
+## 📋 What is this platform?
 
-Esta aplicación es una plataforma completa para ver videos en línea (streaming), similar a servicios como Netflix, YouTube o Disney+, pero que puedes instalar y personalizar según tus necesidades. Está diseñada para ser fácil de usar tanto para los espectadores como para los administradores.
+This application is a complete platform for watching videos online (streaming), similar to services like Netflix, YouTube, or Disney+, but you can install and customize it according to your needs. It is designed to be easy to use for both viewers and administrators.
 
-### ¿Para qué sirve?
+### What is it for?
 
-- **Para usuarios**: Permite ver videos organizados por categorías, crear listas de reproducción personalizadas y disfrutar de contenido con subtítulos en diferentes idiomas.
+- **For users**: It allows viewing videos organized by categories, creating custom playlists, and enjoying content with subtitles in different languages.
 
-- **Para administradores**: Facilita la subida de videos, organización del contenido y gestión de usuarios de manera sencilla.
+- **For administrators**: It facilitates uploading videos, organizing content, and managing users in a simple way.
 
-### ¿Cómo está construida?
+### How is it built?
 
-La plataforma consta de dos partes principales:
+The platform consists of two main parts:
 
-1. **Backend (parte trasera)**: Es el "cerebro" de la aplicación que maneja todos los datos y la lógica. Está construido con FastAPI, un moderno framework de Python que hace que todo funcione rápido y de manera eficiente.
+1. **Backend**: It's the "brain" of the application that handles all the data and logic. It's built with FastAPI, a modern Python framework that makes everything work quickly and efficiently.
 
-2. **Frontend (parte delantera)**: Es lo que los usuarios ven e interactúan. Está desarrollado con React, una tecnología que permite crear interfaces atractivas y fáciles de usar.
+2. **Frontend**: It's what users see and interact with. It's developed with React, a technology that allows creating attractive and easy-to-use interfaces.
 
-## 🚀 ¿Qué puedes hacer con esta plataforma?
+## 🚀 What can you do with this platform?
 
-Esta plataforma ofrece muchas funciones que la hacen completa y fácil de usar:
+This platform offers many features that make it complete and easy to use:
 
-### Para los espectadores
+### For viewers
 
-- **Explorar videos por categorías**: Encuentra fácilmente el contenido que te interesa, ya sea películas, series, documentales o cualquier otra categoría que decidas crear.
+- **Browse videos by categories**: Easily find content that interests you, whether it's movies, series, documentaries, or any other category you decide to create.
 
-- **Crear tus propias listas de reproducción**: Guarda tus videos favoritos en listas personalizadas para verlos más tarde, similar a como lo harías en YouTube o Spotify.
+- **Create your own playlists**: Save your favorite videos in custom lists to watch later, similar to how you would on YouTube or Spotify.
 
-- **Ver videos con subtítulos**: Disfruta del contenido con subtítulos en diferentes idiomas, ideal para aprender idiomas o para personas con discapacidad auditiva.
+- **Watch videos with subtitles**: Enjoy content with subtitles in different languages, ideal for learning languages or for people with hearing impairments.
 
-- **Reproductor de video avanzado**: Controles intuitivos para pausar, adelantar, retroceder, ajustar el volumen y cambiar la calidad del video.
+- **Advanced video player**: Intuitive controls to pause, fast forward, rewind, adjust volume, and change video quality.
 
-### Para los administradores
+### For administrators
 
-- **Panel de control sencillo**: Administra todo el contenido desde una interfaz fácil de usar, sin necesidad de conocimientos técnicos avanzados.
+- **Simple control panel**: Manage all content from an easy-to-use interface, without the need for advanced technical knowledge.
 
-- **Subida de videos simplificada**: Sube nuevos videos al sistema con unos pocos clics, añadiendo automáticamente información como título, descripción y portada.
+- **Simplified video upload**: Upload new videos to the system with just a few clicks, automatically adding information such as title, description, and cover.
 
-- **Organización automática**: El sistema puede clasificar automáticamente los videos según su género o tipo de contenido.
+- **Automatic organization**: The system can automatically classify videos according to their genre or content type.
 
-- **Estadísticas de visualización**: Conoce qué videos son más populares y cuáles son los patrones de visualización de tus usuarios.
+- **Viewing statistics**: Know which videos are most popular and what the viewing patterns of your users are.
 
-### Características técnicas (para desarrolladores)
+### Technical features (for developers)
 
-- **API completa y documentada**: Si eres desarrollador, puedes integrar esta plataforma con otros sistemas gracias a su API bien documentada.
+- **Complete and documented API**: If you are a developer, you can integrate this platform with other systems thanks to its well-documented API.
 
-- **Diseño adaptable**: La interfaz se ajusta automáticamente a cualquier dispositivo, ya sea computadora, tablet o teléfono móvil.
+- **Responsive design**: The interface automatically adjusts to any device, whether it's a computer, tablet, or mobile phone.
 
-## 🛠️ Tecnologías utilizadas (explicado de forma sencilla)
+## 🛠️ Technologies used (explained in simple terms)
 
-Esta sección explica las herramientas que usamos para construir la plataforma. No te preocupes si no entiendes todos estos términos, no necesitas conocerlos para usar la aplicación.
+This section explains the tools we use to build the platform. Don't worry if you don't understand all these terms; you don't need to know them to use the application.
 
-### Parte del servidor (Backend)
+### Server side (Backend)
 
-- **FastAPI**: Es como el "cerebro" de la aplicación. Procesa todas las peticiones y gestiona los datos de manera rápida y eficiente.
+- **FastAPI**: It's like the "brain" of the application. It processes all requests and manages data quickly and efficiently.
 
-- **Base de datos (SQLAlchemy)**: Es como una biblioteca digital muy organizada donde guardamos toda la información: videos, usuarios, categorías, etc.
+- **Database (SQLAlchemy)**: It's like a highly organized digital library where we store all the information: videos, users, categories, etc.
 
-- **Validación de datos (Pydantic)**: Es como un guardia de seguridad que verifica que toda la información que entra y sale de la aplicación sea correcta.
+- **Data validation (Pydantic)**: It's like a security guard that verifies that all information entering and leaving the application is correct.
 
-- **Servidor web (Uvicorn)**: Es como un camarero que sirve la aplicación a través de internet para que todos puedan acceder a ella.
+- **Web server (Uvicorn)**: It's like a waiter that serves the application over the internet so everyone can access it.
 
-### Parte visual (Frontend)
+### Visual side (Frontend)
 
-- **React**: Es como el arquitecto y diseñador de interiores que crea todas las pantallas que ves e interactúas.
+- **React**: It's like the architect and interior designer that creates all the screens you see and interact with.
 
-- **Navegación (React Router)**: Es como el sistema de señalización que te permite moverte entre diferentes secciones de la aplicación.
+- **Navigation (React Router)**: It's like the signaling system that allows you to move between different sections of the application.
 
-- **Gestión de datos (React Query)**: Es como un asistente eficiente que se encarga de traer y actualizar la información que ves en pantalla.
+- **Data management (React Query)**: It's like an efficient assistant who is responsible for bringing and updating the information you see on screen.
 
-- **Reproductor de video (React Player)**: Es la televisión inteligente que reproduce los videos con todos los controles necesarios.
+- **Video player (React Player)**: It's the smart TV that plays videos with all the necessary controls.
 
-- **Diseño adaptable (TailwindCSS)**: Es como un diseñador de moda que hace que la aplicación se vea bien en cualquier dispositivo, ya sea un teléfono, tablet o computadora.
+- **Responsive design (TailwindCSS)**: It's like a fashion designer that makes the application look good on any device, whether it's a phone, tablet, or computer.
 
-- **Construcción rápida (Vite)**: Es como un constructor super veloz que ensambla todas las piezas de la aplicación para que funcione rápidamente.
+- **Fast building (Vite)**: It's like a super-fast builder that assembles all the pieces of the application to make it work quickly.
 
-## 🏗️ Estructura del Proyecto
+## 🏗️ Project Structure
 
 ```plaintext
 stream_apifast_v1/
 ├── back/                 # Backend (FastAPI)
-│   ├── api/              # Definición de endpoints API
-│   ├── core/             # Configuraciones centrales
-│   ├── db/               # Configuración de base de datos
-│   ├── models/           # Modelos de datos
-│   ├── schemas/          # Esquemas de validación
-│   ├── services/         # Lógica de negocio
-│   ├── tests/            # Tests unitarios y de integración
-│   └── main.py           # Punto de entrada de la aplicación
+│   ├── api/              # API endpoints definition
+│   ├── core/             # Core configurations
+│   ├── db/               # Database configuration
+│   ├── models/           # Data models
+│   ├── schemas/          # Validation schemas
+│   ├── services/         # Business logic
+│   ├── tests/            # Unit and integration tests
+│   └── main.py           # Application entry point
 ├── front/                # Frontend (React + Vite)
-│   ├── public/           # Archivos estáticos
-│   ├── src/              # Código fuente React
-│   └── package.json      # Dependencias y scripts
-└── infra/                # Configuración de infraestructura
+│   ├── public/           # Static files
+│   ├── src/              # React source code
+│   └── package.json      # Dependencies and scripts
+└── infra/                # Infrastructure configuration
 ```
 
-## 🚦 Cómo instalar y ejecutar el proyecto
+## 🚦 How to install and run the project
 
-### Lo que necesitas antes de empezar
+### What you need before starting
 
-Para poder instalar y ejecutar esta plataforma en tu computadora, necesitarás tener instalado lo siguiente:
+To install and run this platform on your computer, you will need to have the following installed:
 
-- **Python 3.10 o superior**: Es el lenguaje de programación que usa la parte del servidor. [Cómo instalar Python](https://www.python.org/downloads/)
+- **Python 3.10 or higher**: This is the programming language used by the server side. [How to install Python](https://www.python.org/downloads/)
 
-- **Node.js 18 o superior**: Es necesario para ejecutar la parte visual de la aplicación. [Cómo instalar Node.js](https://nodejs.org/)
+- **Node.js 18 or higher**: This is necessary to run the visual part of the application. [How to install Node.js](https://nodejs.org/)
 
-- **Base de datos**: Por defecto, la aplicación puede usar SQLite (que no requiere instalación adicional), pero para un uso más avanzado puedes usar PostgreSQL. [Cómo instalar PostgreSQL](https://www.postgresql.org/download/)
+- **Database**: By default, the application can use SQLite (which requires no additional installation), but for more advanced use, you can use PostgreSQL. [How to install PostgreSQL](https://www.postgresql.org/download/)
 
-### Paso 1: Configurar la parte del servidor (Backend)
+### Step 1: Configure the server side (Backend)
 
-Sigue estos pasos en orden. Si encuentras algún error, generalmente el mensaje te dará pistas sobre cómo solucionarlo.
+Follow these steps in order. If you encounter any errors, the message will generally give you clues on how to fix them.
 
 ```bash
-# Navegar al directorio del backend
+# Navigate to the backend directory
 cd back
 
-# Crear y activar entorno virtual
+# Create and activate virtual environment
 python -m venv venv
-source venv/bin/activate  # En Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Instalar dependencias
+# Install dependencies
 pip install -r requirements.txt
 
-# 6. Prepara la base de datos
+# Prepare the database
 python run_migrations.py
 
-# 7. (Opcional) Carga datos de ejemplo para probar
+# (Optional) Load example data for testing
 python -m seeds.seed_all
 
-# 8. Inicia el servidor
+# Start the server
 python main.py
 ```
 
-El servidor API estará disponible en [http://localhost:8000](http://localhost:8000)
+The API server will be available at [http://localhost:8000](http://localhost:8000)
 
-Ahora necesitas abrir **otra terminal** (deja la anterior abierta) y seguir estos pasos:
+Now you need to open **another terminal** (leave the previous one open) and follow these steps:
 
 ```bash
-# Navegar al directorio del frontend
+# Navigate to the frontend directory
 cd front
 
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Iniciar el servidor de desarrollo
+# Start the development server
 npm run dev
 ```
 
-La aplicación estará disponible en [http://localhost:3000](http://localhost:3000)
+The application will be available at [http://localhost:3000](http://localhost:3000)
 
-## 📚 Documentación API
+## 📚 API Documentation
 
-La documentación interactiva de la API está disponible en:
+The interactive API documentation is available at:
 
 
 - Doc: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-## 🧪 Pruebas
+## 🧪 Tests
 
 ### Backend
 
@@ -193,24 +193,24 @@ cd front
 npm test
 ```
 
-## 🤝 ¿Quieres ayudar a mejorar esta plataforma?
+## 🤝 Want to help improve this platform?
 
-Tus contribuciones son muy bienvenidas. Si tienes conocimientos de programación y quieres ayudar, estos son los pasos básicos:
+Your contributions are very welcome. If you have programming knowledge and want to help, these are the basic steps:
 
-1. Fork el repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/amazing-feature`)
-3. Haz commit de tus cambios (`git commit -m 'Add some amazing feature'`)
-4. Push a la rama (`git push origin feature/amazing-feature`)
-5. Abre un Pull Request
+1. Fork the repository
+2. Create a branch for your feature (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contacto
+## 📞 Contact
 
-Si tienes preguntas o sugerencias, no dudes en contactarme.
+If you have questions or suggestions, don't hesitate to contact me.
 
 ---
 
-Desarrollado con ❤️ por el Lily Perera de Streaming Video Platform
+Developed with ❤️ by Lily Perera from Streaming Video Platform
