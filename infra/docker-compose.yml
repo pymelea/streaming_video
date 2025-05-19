@@ -1,0 +1,48 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: stream_apifast_db
+    restart: always
+    environment:
+      POSTGRES_DB: streamapp
+      POSTGRES_USER: streamapp
+      POSTGRES_PASSWORD: mylov2
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: pg_isready --username streamapp --dbname streamapp
+      interval: 10s
+      start_period: 10s
+    command:
+      - "postgres"
+      - "-c"
+      - "max_connections=300"
+
+  backend:
+    build:
+      context: ../back
+      dockerfile: Dockerfile
+    container_name: stream_apifast_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: curl -f http://localhost:8000/health || exit 1
+      interval: 10s
+      start_period: 10s
+    environment:
+      - DATABASE_URL=postgresql://streamapp:mylov2@db:5432/streamapp
+
+  frontend:
+    build:
+      context: ../front
+      dockerfile: Dockerfile
+    container_name: stream_apifast_frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend

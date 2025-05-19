@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "stream_apifast"
+version = "0.1.0"
+description = ""
+authors = ["lily <lilycapetillo86@gmail.com>"]
+# readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.14"
+fastapi = ">=0.115.12,<0.116.0"
+uvicorn = ">=0.34.2,<0.35.0"
+sqlalchemy = ">=2.0.40,<3.0.0"
+python-dotenv = ">=1.0.0,<2.0.0"                                        # Actualizado a una versión más reciente
+pydantic = ">=1.10.1,<2.0.0"
+requests = ">=2.26.0,<3.0.0"
+psycopg2-binary = ">=2.9.10,<3.0.0"
+python-multipart = ">=0.0.20,<0.0.21"
+psycopg = { version = ">=3.2.9,<4.0.0", extras = ["binary"] }
+alembic = ">=1.15.2,<2.0.0"
+pyjwt = ">=1.3.1,<2.0.0"
+httpx = ">=0.28.1,<0.29.0"
+passlib = { version = ">=1.7.4,<2.0.0", extras = ["bcrypt"] }
+python-jose = { version = ">=3.4.0,<4.0.0", extras = ["cryptography"] }
+pytest = "^8.3.5"
+pytest-asyncio = "^0.26.0"
+pytest-cov = "^6.1.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.3.5,<9.0.0"
+pytest-cov = ">=6.1.1,<7.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
