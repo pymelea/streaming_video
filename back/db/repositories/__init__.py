@@ -1,0 +1,4 @@
+from db.repositories.video_repository import video_repository
+from db.repositories.subtitle_repository import subtitle_repository
+from db.repositories.category_repository import category_repository
+from db.repositories.playlist_repository import playlist_repository
