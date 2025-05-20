@@ -136,24 +136,22 @@ Follow these steps in order. If you encounter any errors, the message will gener
 # Navigate to the backend directory
 cd back
 
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+# Install dependencies and create virtual environment with Poetry
+poetry install
 
-# Install dependencies
-pip install -r requirements.txt
+# Activate the Poetry virtual environment
+poetry env activate
 
 # Prepare the database
-python run_migrations.py
+make up_db
 
-# (Optional) Load example data for testing
-python -m seeds.seed_all
+
 
 # Start the server
-python main.py
+poetry run python main.py
 ```
 
-The API server will be available at [http://localhost:8000](http://localhost:8000)
+The API server will be available at [http://localhost:8000/docs](http://localhost:8000/docs)
 
 Now you need to open **another terminal** (leave the previous one open) and follow these steps:
 
