@@ -14,10 +14,10 @@ up:
 	docker compose -f infra/docker-compose.yml up -d --remove-orphans
 
 up_dev:
+	docker compose -f infra/docker-compose.yml down --remove-orphans
 	docker compose -f infra/docker-compose.yml up -d --remove-orphans --build
-
-build:
-	docker compose -f infra/docker-compose.yml up -d --remove-orphans --build
+	sleep 10
+	docker compose -f infra/docker-compose.yml exec backend python -m seeds.seed_all
 
 
 
