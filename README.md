@@ -145,8 +145,6 @@ poetry env activate
 # Prepare the database
 make up_db
 
-
-
 # Start the server
 poetry run python main.py
 ```
