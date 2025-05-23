@@ -10,7 +10,7 @@ RUN addgroup -S nodegroup && adduser -S nodeuser -G nodegroup
 RUN npm install -g pnpm
 
 # Copy package.json and lock files
-COPY package.json pnpm-lock.yaml ./
+COPY package.json  ./
 
 # Set proper ownership
 RUN chown -R nodeuser:nodegroup /app
@@ -19,7 +19,7 @@ RUN chown -R nodeuser:nodegroup /app
 USER nodeuser
 
 # Install dependencies
-RUN pnpm install --frozen-lockfile
+RUN pnpm install
 
 # Copy the rest of the code
 COPY --chown=nodeuser:nodegroup . .
