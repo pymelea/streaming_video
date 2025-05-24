@@ -28,5 +28,8 @@ export default defineConfig(
         exclude: ['**/node_modules/**', '**/coverage/**', 'postcss.config.js', 'tailwind.config.js'],
       },
     },
+     preview: {
+    port: parseInt(process.env.PORT) || 4173
+  }
   })
 );
