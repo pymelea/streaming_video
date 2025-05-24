@@ -9,7 +9,7 @@ export const API_ENDPOINTS = {
   VIDEO_STREAM: (id) => `/videos/${id}/stream/`,
   PLAYLISTS: '/playlists/',
   PLAYLIST: (id) => `/playlists/${id}`,
-  PLAYLIST_VIDEOS: (id) => `/playlists/${id}/videos/`,
+  PLAYLIST_VIDEOS: (id) => `/playlists/${id}/videos`,
 };
 
 // Application routes
